@@ -9,7 +9,7 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 ## Dataset
 
 - Original dataset: Telco Customer Churn from Kaggle  
-- Stored in `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv`
+- Downloaded as `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv` named as `telco_customers.csv`
 
 ---
 
@@ -42,13 +42,31 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
   - `event_logs`  
 - Verified tables exist and their structure using `SHOW TABLES;` and `DESCRIBE <table_name>;`  
 - Confirmed connection status in MySQL Workbench  
+- Generated synthetic A/B test and event logs using `scripts/data_generation.py`:
+  - Outputs created in `data/raw/`: `ab_test.csv`, `event_logs.csv`
 - Prepared for next step: **loading local CSVs into RDS tables**
 
 ---
 
-## Next Steps
+## Day 3 — DDL refinements and CSV loader
 
-- Data augmentation  
-- Load local CSVs into cloud database  
+- Finalized/updated RDS schema in `scripts/ddl_mysql_aws.sql` to align with CSVs:
+  - `customer_id` set to `VARCHAR(20)` across tables; foreign keys maintained
+  - `ab_test.start_date`, `ab_test.end_date` are `DATE` (derived from `exposure_date`)
+  - `event_logs` uses `event_timestamp` (from `event_ts`) and `event_value` (from `amount`)
+- Implemented CSV loader `scripts/load_csv_to_rds.py` with safeguards:
+  - Loads first `limit=1000` rows from `telco_customers.csv` into `telco_customers`
+  - Builds an allowlist of loaded `customer_id`s, then loads only matching rows from `ab_test.csv` and `event_logs.csv`
+  - Per-file `limit=1000` applies to inserted (matching) rows; non-matching rows are skipped
+  - Coerces booleans (`Yes/No`) to 1/0 and decimals via safe parsing
+  - Note: the loader clears each target table (`DELETE FROM <table>`) before loading
+  - Ran the loader successfully to insert the first 1000 customers and matched A/B + event rows
+
+## Next Steps
 - SQL analysis and queries  
 - Build Power BI dashboards
+
+# Run code by
+
+- python3 scripts/load_csv_to_rds.py
+
