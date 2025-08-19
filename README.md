@@ -62,6 +62,19 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
   - Note: the loader clears each target table (`DELETE FROM <table>`) before loading
   - Ran the loader successfully to insert the first 1000 customers and matched A/B + event rows
 
+---
+
+## Day 4 — Dim/Fact schema and population scripts
+
+- Added DDL scripts under `scripts/ddl/`:
+  - `scripts/ddl/ddl_customer_dim.sql`: Defines `customer_dim` with `tenure_bucket` and key customer attributes
+  - `scripts/ddl/ddl_customer_activity_fact.sql`: Defines `customer_activity_fact` at customer×experiment grain, includes A/B metrics and aggregated event metrics
+- Added insert scripts to populate from raw tables under `scripts/insert/` and `scripts/Insert/`:
+  - `scripts/insert/insert_customer_dim.sql`: Populates `customer_dim` from `telco_customers` with tenure bucketing
+  - `scripts/insert/insert_customer_activity_fact.sql`: Populates `customer_activity_fact` by joining `ab_test` with `event_logs`
+
+---
+
 ## Next Steps
 - SQL analysis and queries  
 - Build Power BI dashboards
