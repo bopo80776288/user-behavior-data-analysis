@@ -19,12 +19,13 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 - `scripts/` : Python and SQL scripts  
 - `notebooks/` : exploratory data analysis and modeling  
 - `dashboards/` : Power BI files
+- `docs/` : Word final report document and PowerPoint slides
 
 ---
 
 ## Day 1 — Project Setup
 
-- Created project folder structure: `data/raw`, `data/processed`, `scripts/`, `notebooks/`, `dashboards/`  
+- Created project folder structure
 - Downloaded and saved the Telco Customer Churn CSV file into `data/raw`  
 - Prepared initial Python scripts for data augmentation (`data_generation.py`)  
 - Planned project pipeline: data augmentation → cloud database → SQL analysis → dashboarding
@@ -36,12 +37,11 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 - Created an **AWS RDS instance** for MySQL (`telco-db`)  
 - Installed **MySQL Workbench** and successfully connected to the RDS instance  
 - Created **database `user_behavior_db`** on the RDS instance  
-- Fixed and executed **DDL (`ddl_mysql_aws.sql`)** to create tables:  
+- Fixed and executed **DDL (`01_base_tables.sql`)** to create tables:  
   - `telco_customers`  
   - `ab_test`  
   - `event_logs`  
 - Verified tables exist and their structure using `SHOW TABLES;` and `DESCRIBE <table_name>;`  
-- Confirmed connection status in MySQL Workbench  
 - Generated synthetic A/B test and event logs using `scripts/data_generation.py`:
   - Outputs created in `data/raw/`: `ab_test.csv`, `event_logs.csv`
 - Prepared for next step: **loading local CSVs into RDS tables**
@@ -50,7 +50,7 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 
 ## Day 3 — DDL refinements and CSV loader
 
-- Finalized/updated RDS schema in `scripts/ddl_mysql_aws.sql` to align with CSVs:
+- Finalized/updated RDS schema in `scripts/01_base_tables.sql` to align with CSVs:
   - `customer_id` set to `VARCHAR(20)` across tables; foreign keys maintained
   - `ab_test.start_date`, `ab_test.end_date` are `DATE` (derived from `exposure_date`)
   - `event_logs` uses `event_timestamp` (from `event_ts`) and `event_value` (from `amount`)
@@ -75,9 +75,9 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 
 ---
 
-## Day 5 — Professional folder structure and file organization
+## Day 5 — Folder structure, file organization, SQL Analysis, and PowerBI Dashboards
 
-- **Reorganized scripts folder structure** for professional standards:
+- **Reorganized scripts folder structure**:
   - `scripts/ddl/` - All table definitions (01_base_tables.sql, 02_customer_dim.sql, 03_customer_activity_fact.sql)
   - `scripts/sql/` - Data manipulation scripts (insert_customer_dim.sql, insert_customer_activity_fact.sql)
   - `scripts/etl/` - Python ETL processes only (load_raw_data.py, data_generation.py)
@@ -88,7 +88,11 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
   - `ddl_customer_dim.sql` → `02_customer_dim.sql` (sequential naming)
   - `ddl_customer_activity_fact.sql` → `03_customer_activity_fact.sql` (sequential naming)
 - **Separated concerns properly** - SQL files no longer mixed with Python files in ETL folder
-- **Established professional naming convention** - sequential numbering for DDL files, descriptive names for all scripts
+- **Established naming convention** - sequential numbering for DDL files, descriptive names for all scripts
+- **SQL analysis workflow** (feeds the dashboard):
+  - `scripts/analysis/exploration/churn_exploration.sql` - exploration queries
+  - `scripts/analysis/summary/churn_summary.sql` - summary metrics
+  - `scripts/analysis/outputs/churn summary.csv` - exported output used as the Power BI data source
 - **Created Power BI dashboard** for customer churn analysis:
   - `dashboards/powerbi_pbix/churn summary.pbix` - Interactive Power BI dashboard
   - `dashboards/powerbi_pdf/churn summary.pdf` - Static PDF export of dashboard
