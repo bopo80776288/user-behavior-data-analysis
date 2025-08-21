@@ -75,11 +75,22 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
 
 ---
 
-## Next Steps
-- SQL analysis and queries  
-- Build Power BI dashboards
+## Day 5 — Professional folder structure and file organization
 
-# Run code by
+- **Reorganized scripts folder structure** for professional standards:
+  - `scripts/ddl/` - All table definitions (01_base_tables.sql, 02_customer_dim.sql, 03_customer_activity_fact.sql)
+  - `scripts/sql/` - Data manipulation scripts (insert_customer_dim.sql, insert_customer_activity_fact.sql)
+  - `scripts/etl/` - Python ETL processes only (load_raw_data.py, data_generation.py)
+  - `scripts/analysis/` - Analysis and exploration scripts
+- **Renamed files for clarity and consistency**:
+  - `load_csv_to_rds.py` → `load_raw_data.py` (more descriptive)
+  - `ddl_mysql_aws.sql` → `01_base_tables.sql` (sequential, descriptive)
+  - `ddl_customer_dim.sql` → `02_customer_dim.sql` (sequential naming)
+  - `ddl_customer_activity_fact.sql` → `03_customer_activity_fact.sql` (sequential naming)
+- **Separated concerns properly** - SQL files no longer mixed with Python files in ETL folder
+- **Established professional naming convention** - sequential numbering for DDL files, descriptive names for all scripts
+- **Created Power BI dashboard** for customer churn analysis:
+  - `dashboards/powerbi_pbix/churn summary.pbix` - Interactive Power BI dashboard
+  - `dashboards/powerbi_pdf/churn summary.pdf` - Static PDF export of dashboard
 
-- python3 scripts/load_csv_to_rds.py
-
+---

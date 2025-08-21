@@ -1,0 +1,47 @@
+Contract,PaymentMethod,tenure_group,total_customers,churned_customers,churn_rate_pct
+Month-to-month,"Mailed check","0-1 year",99,35,35.35
+Month-to-month,"Electronic check","0-1 year",134,88,65.67
+Month-to-month,"Credit card (automatic)","0-1 year",23,10,43.48
+Month-to-month,"Bank transfer (automatic)","0-1 year",36,19,52.78
+Month-to-month,"Bank transfer (automatic)","1-2 years",18,3,16.67
+Month-to-month,"Credit card (automatic)","1-2 years",14,4,28.57
+Month-to-month,"Mailed check","1-2 years",19,3,15.79
+Month-to-month,"Electronic check","1-2 years",50,23,46.00
+Month-to-month,"Bank transfer (automatic)","2-4 years",27,8,29.63
+Month-to-month,"Electronic check","2-4 years",46,16,34.78
+Month-to-month,"Credit card (automatic)","2-4 years",27,6,22.22
+Month-to-month,"Mailed check","2-4 years",10,1,10.00
+Month-to-month,"Credit card (automatic)","4+ years",9,2,22.22
+Month-to-month,"Bank transfer (automatic)","4+ years",17,3,17.65
+Month-to-month,"Electronic check","4+ years",18,10,55.56
+Month-to-month,"Mailed check","4+ years",2,1,50.00
+"One year","Bank transfer (automatic)","0-1 year",3,1,33.33
+"One year","Mailed check","0-1 year",11,1,9.09
+"One year","Electronic check","0-1 year",1,0,0.00
+"One year","Credit card (automatic)","0-1 year",5,0,0.00
+"One year","Mailed check","1-2 years",12,0,0.00
+"One year","Bank transfer (automatic)","1-2 years",5,1,20.00
+"One year","Credit card (automatic)","1-2 years",3,0,0.00
+"One year","Electronic check","1-2 years",4,0,0.00
+"One year","Credit card (automatic)","2-4 years",24,1,4.17
+"One year","Mailed check","2-4 years",13,0,0.00
+"One year","Bank transfer (automatic)","2-4 years",23,0,0.00
+"One year","Electronic check","2-4 years",12,2,16.67
+"One year","Bank transfer (automatic)","4+ years",27,5,18.52
+"One year","Electronic check","4+ years",22,7,31.82
+"One year","Credit card (automatic)","4+ years",34,1,2.94
+"One year","Mailed check","4+ years",5,0,0.00
+"Two year","Credit card (automatic)","0-1 year",1,0,0.00
+"Two year","Bank transfer (automatic)","0-1 year",2,0,0.00
+"Two year","Mailed check","0-1 year",6,0,0.00
+"Two year","Mailed check","1-2 years",8,0,0.00
+"Two year","Bank transfer (automatic)","1-2 years",1,0,0.00
+"Two year","Credit card (automatic)","1-2 years",5,0,0.00
+"Two year","Electronic check","2-4 years",5,1,20.00
+"Two year","Mailed check","2-4 years",14,0,0.00
+"Two year","Credit card (automatic)","2-4 years",11,0,0.00
+"Two year","Bank transfer (automatic)","2-4 years",11,0,0.00
+"Two year","Electronic check","4+ years",18,1,5.56
+"Two year","Credit card (automatic)","4+ years",74,1,1.35
+"Two year","Mailed check","4+ years",18,1,5.56
+"Two year","Bank transfer (automatic)","4+ years",73,1,1.37
