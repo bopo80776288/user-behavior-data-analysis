@@ -1,0 +1,116 @@
+Contract,PaymentMethod,RevenueSegment,tenure_bucket,TotalCustomers,ActiveCustomers,ChurnedCustomers,ActiveRevenue,TotalHistoricalRevenue,AvgMonthlyCharges
+Month-to-month,"Bank transfer (automatic)","High Revenue","0-12 months",9,0,9,0.00,824.15,91.572222
+Month-to-month,"Bank transfer (automatic)","High Revenue","13-24 months",4,3,1,270.40,356.30,89.075000
+Month-to-month,"Bank transfer (automatic)","High Revenue","25-48 months",15,10,5,904.95,1386.40,92.426667
+Month-to-month,"Bank transfer (automatic)","High Revenue","49+ months",12,9,3,815.35,1128.15,94.012500
+Month-to-month,"Bank transfer (automatic)","Low Revenue","0-12 months",10,7,3,163.50,238.25,23.825000
+Month-to-month,"Bank transfer (automatic)","Low Revenue","13-24 months",3,3,0,75.90,75.90,25.300000
+Month-to-month,"Bank transfer (automatic)","Low Revenue","25-48 months",1,1,0,20.35,20.35,20.350000
+Month-to-month,"Bank transfer (automatic)","Low Revenue","49+ months",1,1,0,30.20,30.20,30.200000
+Month-to-month,"Bank transfer (automatic)","Mid Revenue","0-12 months",17,10,7,598.40,1085.55,63.855882
+Month-to-month,"Bank transfer (automatic)","Mid Revenue","13-24 months",11,9,2,644.60,789.20,71.745455
+Month-to-month,"Bank transfer (automatic)","Mid Revenue","25-48 months",11,8,3,506.75,707.10,64.281818
+Month-to-month,"Bank transfer (automatic)","Mid Revenue","49+ months",4,4,0,238.05,238.05,59.512500
+Month-to-month,"Credit card (automatic)","High Revenue","0-12 months",7,3,4,289.90,660.00,94.285714
+Month-to-month,"Credit card (automatic)","High Revenue","13-24 months",7,4,3,340.80,624.00,89.142857
+Month-to-month,"Credit card (automatic)","High Revenue","25-48 months",13,11,2,981.45,1158.45,89.111538
+Month-to-month,"Credit card (automatic)","High Revenue","49+ months",8,6,2,583.55,773.05,96.631250
+Month-to-month,"Credit card (automatic)","Low Revenue","0-12 months",4,4,0,100.55,100.55,25.137500
+Month-to-month,"Credit card (automatic)","Low Revenue","13-24 months",1,1,0,24.85,24.85,24.850000
+Month-to-month,"Credit card (automatic)","Low Revenue","25-48 months",1,0,1,0.00,30.75,30.750000
+Month-to-month,"Credit card (automatic)","Mid Revenue","0-12 months",12,6,6,358.45,668.90,55.741667
+Month-to-month,"Credit card (automatic)","Mid Revenue","13-24 months",6,5,1,357.90,403.45,67.241667
+Month-to-month,"Credit card (automatic)","Mid Revenue","25-48 months",13,10,3,624.40,826.95,63.611538
+Month-to-month,"Credit card (automatic)","Mid Revenue","49+ months",1,1,0,59.60,59.60,59.600000
+Month-to-month,"Electronic check","High Revenue","0-12 months",53,13,40,1131.15,4776.75,90.127358
+Month-to-month,"Electronic check","High Revenue","13-24 months",30,13,17,1215.20,2818.80,93.960000
+Month-to-month,"Electronic check","High Revenue","25-48 months",28,17,11,1578.80,2651.25,94.687500
+Month-to-month,"Electronic check","High Revenue","49+ months",15,8,7,773.50,1476.10,98.406667
+Month-to-month,"Electronic check","Low Revenue","0-12 months",15,5,10,124.95,411.65,27.443333
+Month-to-month,"Electronic check","Low Revenue","13-24 months",3,3,0,75.80,75.80,25.266667
+Month-to-month,"Electronic check","Low Revenue","25-48 months",4,3,1,85.75,116.10,29.025000
+Month-to-month,"Electronic check","Mid Revenue","0-12 months",66,28,38,1791.70,4305.45,65.234091
+Month-to-month,"Electronic check","Mid Revenue","13-24 months",17,11,6,657.70,1058.95,62.291176
+Month-to-month,"Electronic check","Mid Revenue","25-48 months",14,10,4,646.10,931.70,66.550000
+Month-to-month,"Electronic check","Mid Revenue","49+ months",3,0,3,0.00,145.25,48.416667
+Month-to-month,"Mailed check","High Revenue","0-12 months",7,1,6,107.95,623.85,89.121429
+Month-to-month,"Mailed check","High Revenue","13-24 months",4,3,1,272.00,367.15,91.787500
+Month-to-month,"Mailed check","High Revenue","25-48 months",6,5,1,442.15,528.45,88.075000
+Month-to-month,"Mailed check","Low Revenue","0-12 months",51,42,9,898.30,1081.65,21.208824
+Month-to-month,"Mailed check","Low Revenue","13-24 months",5,5,0,109.90,109.90,21.980000
+Month-to-month,"Mailed check","Low Revenue","25-48 months",2,2,0,52.90,52.90,26.450000
+Month-to-month,"Mailed check","Low Revenue","49+ months",1,0,1,0.00,19.40,19.400000
+Month-to-month,"Mailed check","Mid Revenue","0-12 months",41,21,20,1221.85,2396.75,58.457317
+Month-to-month,"Mailed check","Mid Revenue","13-24 months",10,8,2,477.40,616.55,61.655000
+Month-to-month,"Mailed check","Mid Revenue","25-48 months",2,2,0,117.60,117.60,58.800000
+Month-to-month,"Mailed check","Mid Revenue","49+ months",1,1,0,54.45,54.45,54.450000
+"One year","Bank transfer (automatic)","High Revenue","25-48 months",9,9,0,866.05,866.05,96.227778
+"One year","Bank transfer (automatic)","High Revenue","49+ months",13,9,4,912.60,1297.70,99.823077
+"One year","Bank transfer (automatic)","Low Revenue","0-12 months",3,2,1,39.15,58.95,19.650000
+"One year","Bank transfer (automatic)","Low Revenue","13-24 months",2,2,0,41.45,41.45,20.725000
+"One year","Bank transfer (automatic)","Low Revenue","25-48 months",6,6,0,140.55,140.55,23.425000
+"One year","Bank transfer (automatic)","Low Revenue","49+ months",3,3,0,68.60,68.60,22.866667
+"One year","Bank transfer (automatic)","Mid Revenue","13-24 months",3,2,1,130.25,174.00,58.000000
+"One year","Bank transfer (automatic)","Mid Revenue","25-48 months",8,8,0,526.90,526.90,65.862500
+"One year","Bank transfer (automatic)","Mid Revenue","49+ months",11,10,1,588.85,664.65,60.422727
+"One year","Credit card (automatic)","High Revenue","13-24 months",1,1,0,94.30,94.30,94.300000
+"One year","Credit card (automatic)","High Revenue","25-48 months",12,11,1,1079.30,1159.60,96.633333
+"One year","Credit card (automatic)","High Revenue","49+ months",23,22,1,2202.25,2302.55,100.110870
+"One year","Credit card (automatic)","Low Revenue","0-12 months",3,3,0,73.25,73.25,24.416667
+"One year","Credit card (automatic)","Low Revenue","25-48 months",6,6,0,125.40,125.40,20.900000
+"One year","Credit card (automatic)","Low Revenue","49+ months",2,2,0,56.35,56.35,28.175000
+"One year","Credit card (automatic)","Mid Revenue","0-12 months",2,2,0,105.30,105.30,52.650000
+"One year","Credit card (automatic)","Mid Revenue","13-24 months",2,2,0,130.40,130.40,65.200000
+"One year","Credit card (automatic)","Mid Revenue","25-48 months",6,6,0,420.25,420.25,70.041667
+"One year","Credit card (automatic)","Mid Revenue","49+ months",9,9,0,599.90,599.90,66.655556
+"One year","Electronic check","High Revenue","13-24 months",2,2,0,188.65,188.65,94.325000
+"One year","Electronic check","High Revenue","25-48 months",7,5,2,470.70,676.50,96.642857
+"One year","Electronic check","High Revenue","49+ months",18,11,7,1102.50,1788.20,99.344444
+"One year","Electronic check","Low Revenue","0-12 months",1,1,0,20.20,20.20,20.200000
+"One year","Electronic check","Low Revenue","13-24 months",1,1,0,19.65,19.65,19.650000
+"One year","Electronic check","Low Revenue","25-48 months",2,2,0,44.90,44.90,22.450000
+"One year","Electronic check","Low Revenue","49+ months",1,1,0,20.40,20.40,20.400000
+"One year","Electronic check","Mid Revenue","13-24 months",1,1,0,78.40,78.40,78.400000
+"One year","Electronic check","Mid Revenue","25-48 months",3,3,0,181.50,181.50,60.500000
+"One year","Electronic check","Mid Revenue","49+ months",3,3,0,190.85,190.85,63.616667
+"One year","Mailed check","High Revenue","13-24 months",2,2,0,191.35,191.35,95.675000
+"One year","Mailed check","High Revenue","25-48 months",3,3,0,288.80,288.80,96.266667
+"One year","Mailed check","High Revenue","49+ months",1,1,0,114.65,114.65,114.650000
+"One year","Mailed check","Low Revenue","0-12 months",9,8,1,173.60,193.45,21.494444
+"One year","Mailed check","Low Revenue","13-24 months",7,7,0,142.70,142.70,20.385714
+"One year","Mailed check","Low Revenue","25-48 months",3,3,0,76.45,76.45,25.483333
+"One year","Mailed check","Low Revenue","49+ months",4,4,0,95.95,95.95,23.987500
+"One year","Mailed check","Mid Revenue","0-12 months",2,2,0,98.15,98.15,49.075000
+"One year","Mailed check","Mid Revenue","13-24 months",3,3,0,160.00,160.00,53.333333
+"One year","Mailed check","Mid Revenue","25-48 months",7,7,0,432.65,432.65,61.807143
+"Two year","Bank transfer (automatic)","High Revenue","25-48 months",6,6,0,567.45,567.45,94.575000
+"Two year","Bank transfer (automatic)","High Revenue","49+ months",32,31,1,3118.10,3228.10,100.878125
+"Two year","Bank transfer (automatic)","Low Revenue","0-12 months",1,1,0,25.70,25.70,25.700000
+"Two year","Bank transfer (automatic)","Low Revenue","13-24 months",1,1,0,24.10,24.10,24.100000
+"Two year","Bank transfer (automatic)","Low Revenue","25-48 months",3,3,0,72.20,72.20,24.066667
+"Two year","Bank transfer (automatic)","Low Revenue","49+ months",21,21,0,484.80,484.80,23.085714
+"Two year","Bank transfer (automatic)","Mid Revenue","0-12 months",1,1,0,52.55,52.55,52.550000
+"Two year","Bank transfer (automatic)","Mid Revenue","25-48 months",2,2,0,109.45,109.45,54.725000
+"Two year","Bank transfer (automatic)","Mid Revenue","49+ months",20,20,0,1292.70,1292.70,64.635000
+"Two year","Credit card (automatic)","High Revenue","25-48 months",3,3,0,281.35,281.35,93.783333
+"Two year","Credit card (automatic)","High Revenue","49+ months",35,34,1,3328.00,3432.00,98.057143
+"Two year","Credit card (automatic)","Low Revenue","0-12 months",1,1,0,26.10,26.10,26.100000
+"Two year","Credit card (automatic)","Low Revenue","13-24 months",5,5,0,110.90,110.90,22.180000
+"Two year","Credit card (automatic)","Low Revenue","25-48 months",4,4,0,96.10,96.10,24.025000
+"Two year","Credit card (automatic)","Low Revenue","49+ months",17,17,0,363.30,363.30,21.370588
+"Two year","Credit card (automatic)","Mid Revenue","25-48 months",4,4,0,273.80,273.80,68.450000
+"Two year","Credit card (automatic)","Mid Revenue","49+ months",22,22,0,1504.65,1504.65,68.393182
+"Two year","Electronic check","High Revenue","25-48 months",3,2,1,197.60,302.20,100.733333
+"Two year","Electronic check","High Revenue","49+ months",13,12,1,1205.15,1313.20,101.015385
+"Two year","Electronic check","Low Revenue","25-48 months",2,2,0,45.00,45.00,22.500000
+"Two year","Electronic check","Mid Revenue","49+ months",5,5,0,309.95,309.95,61.990000
+"Two year","Mailed check","High Revenue","0-12 months",1,1,0,80.85,80.85,80.850000
+"Two year","Mailed check","High Revenue","13-24 months",1,1,0,81.95,81.95,81.950000
+"Two year","Mailed check","High Revenue","49+ months",4,4,0,338.30,338.30,84.575000
+"Two year","Mailed check","Low Revenue","0-12 months",5,5,0,115.75,115.75,23.150000
+"Two year","Mailed check","Low Revenue","13-24 months",5,5,0,121.15,121.15,24.230000
+"Two year","Mailed check","Low Revenue","25-48 months",11,11,0,228.05,228.05,20.731818
+"Two year","Mailed check","Low Revenue","49+ months",11,10,1,218.60,237.95,21.631818
+"Two year","Mailed check","Mid Revenue","13-24 months",2,2,0,119.10,119.10,59.550000
+"Two year","Mailed check","Mid Revenue","25-48 months",3,3,0,219.75,219.75,73.250000
+"Two year","Mailed check","Mid Revenue","49+ months",3,3,0,169.20,169.20,56.400000

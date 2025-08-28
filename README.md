@@ -98,3 +98,23 @@ This project aims to simulate a real-world user behavior analytics pipeline usin
   - `dashboards/powerbi_pdf/churn summary.pdf` - Static PDF export of dashboard
 
 ---
+
+## Day 6 — Financial analysis (active vs historical) and Power BI integration
+
+- Added financial exploration and summary:
+  - `scripts/analysis/exploration/financial_exploration.sql` (raw metrics by segment; no rates)
+  - `scripts/analysis/summary/financial_summary.sql` (view with raw metrics only)
+    - Fields: `TotalCustomers`, `ActiveCustomers`, `ChurnedCustomers`, `ActiveRevenue`, `TotalHistoricalRevenue`, `AvgMonthlyCharges`, plus segment columns (`Contract`, `Payment Method`, `Revenue Segment`, `Tenure Group`)
+- Standardized tenure bins across churn and financial views (`0-1 year`, `1-2 years`, `2-4 years`, `4+ years`).
+- Exported `financial_summary.csv` to `scripts/analysis/outputs/` for Power BI.
+- Built Power BI page for financial impact:
+  - Cards: Active Revenue, Churned Revenue (TotalHistoricalRevenue − ActiveRevenue)
+  - Charts: Revenue at Risk by Contract / Payment Method / Tenure Group
+  - Measures defined in Power BI (examples):
+    - `Churn Rate = DIVIDE([Churned Customers], [Total Customers])`
+    - `Revenue at Risk = [Active Revenue] * [Churn Rate]`
+    - `Revenue Retention % = DIVIDE([Active Revenue], [Total Historical Revenue])`
+- Modeling guidance applied:
+  - Use conformed dimensions in Power BI (e.g., shared `Tenure Group`) so slicers work across churn and financial tables.
+
+---
